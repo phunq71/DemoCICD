@@ -2,13 +2,13 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master ]
+    branches: [ dev ]
   pull_request:
-    branches: [ master ]
+    branches: [ dev ]
 
 jobs:
   build:
-
+    name: Build and Test with Maven
     runs-on: ubuntu-latest
 
     steps:
